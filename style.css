@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    height: 90vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* ===== Header ===== */
+header {
+    padding: 20px;
+    background: #8FB9A8; /* สีหลัก LIMI */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== Chat Box ===== */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fafafa;
+}
+
+.message {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 15px;
+    line-height: 1.4;
+}
+
+/* ข้อความ LIMI (AI) */
+.ai-message {
+    align-self: flex-start;
+    background: #F1F5F2; /* เทาอมเขียว */
+    color: #4A5D55;
+    border: 1px solid #E2EAE6;
+}
+
+/* ข้อความผู้ใช้ */
+.user-message {
+    align-self: flex-end;
+    background: #8FB9A8;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ===== Input Area ===== */
+.input-area {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+/* ===== Send Button ===== */
+#send-btn {
+    background: #8FB9A8;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+#send-btn:hover {
+    background: #A8CFC3;
+}
